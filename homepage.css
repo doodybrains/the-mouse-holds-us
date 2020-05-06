@@ -47,6 +47,7 @@ h1 {
   top: 0;
   left: 0;
   color: lightskyblue;
+  z-index: 99;
 }
 h1 span {
   display: block;
