@@ -26,34 +26,33 @@ body {
   padding: 10px;
   font-size: 16px;
   overflow-x: hidden;
-  background: black;
+
+  background: #f0dba8;
+  color: black;
 }
 
 body.home {
-  padding: 20px;
   width: 100%;
+  position: relative;
 }
 h1, h2, h3, h4, p, ul, li {margin: 0; padding: 0; font-weight: normal;}
 
 ul {list-style: none;}
 
 h1 {
-  font-size: 4.125em;
-  transform: rotate(4deg);
-  margin-top: 20px;
-  margin-bottom: 155px;
-  margin-left: 20px;
-  position:fixed;
-  top: 0;
-  left: 0;
-  color: lightskyblue;
   z-index: 99;
   opacity: .8;
+  position: fixed;
+  bottom: -40px;
+  left: 0;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+  font-size: 1.675em;
+  width: 100vh;
 }
 h1 span {
   display: block;
-  font-size: .375em;
-  margin-left: 80px;
+  font-size: .575em;
 }
 
 h2 {
@@ -63,7 +62,6 @@ h2 {
   margin-top: 72px;
   font-style: italic;
   font-weight: bold;
-  color: lightskyblue;
 }
 
 strong {
@@ -75,48 +73,49 @@ strong {
 }
 
 p {
-  font-size: 1.125em;
+  font-size: 1em;
   line-height: 1.225em;
   max-width:80%;
   margin-bottom: 32px;
   width: 100%;
   text-decoration: none;
   color: inherit;
-  color: lightskyblue;
+
 }
 h3 {
-  font-size: 2em;
+  font-size: 1.225em;
   line-height: 1.225em;
   max-width: 80%;
   margin-bottom: 6px;
   width: 100%;
-  color: lightskyblue;
 }
 
 a {
   text-decoration: none;
   color: inherit;
-  border-bottom: 1px dashed lightskyblue;
+  border-bottom: 1px dashed black;
 }
 img {
   display: block;
 }
 
 .wrapper {
-  max-width: 800px;
-  padding-top: 210px;
+  max-width: 1200px;
+  padding: 60px 0 0 60px;
+  margin: 0 auto;
 }
+
 img {
   display: block;
   width: 100%;
-  margin: 0 0 80px 0;
+  margin: 0 0 62px 0;
 }
 .container {
   position: relative;
   padding-bottom: 56.25%;
   overflow: hidden;
   max-width: 100%;
-  margin-bottom: 80px;
+  margin-bottom: 62px;
 }
 
 .container iframe,
@@ -127,4 +126,40 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+
+  /* .optics {
+    height: 100vh;
+    width: 100vh;
+    margin: 0 auto 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: red;
+    opacity: .5;
+    border-radius: 50%;
+    filter: blur(3vh);
+    z-index: 0;
+  } */
+  a {
+    border-bottom: 1px dashed black;
+  }
+  .wrapper {
+    padding: 60px 80px 0 130px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1.125em;
+  }
 }
