@@ -43,16 +43,23 @@ h1 {
   z-index: 99;
   opacity: .8;
   position: fixed;
-  bottom: -40px;
+  bottom: -23px;
   left: 0;
   transform: rotate(-90deg);
   transform-origin: 0 0;
-  font-size: 1.675em;
+  font-size: 1.6em;
   width: 100vh;
 }
-h1 span {
-  display: block;
-  font-size: .575em;
+span.byline {
+  z-index: 99;
+  opacity: .8;
+  position: fixed;
+  bottom: -7px;
+  left: 30px;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+  font-size: .75em;
+  width: 100vh;
 }
 
 h2 {
@@ -101,7 +108,7 @@ img {
 
 .wrapper {
   max-width: 1200px;
-  padding: 60px 0 0 60px;
+  padding: 60px 0 0 50px;
   margin: 0 auto;
 }
 
@@ -147,16 +154,33 @@ img {
   a {
     border-bottom: 1px dashed black;
   }
+  a:hover {
+    border-bottom: 5px solid black;
+  }
   .wrapper {
-    padding: 60px 80px 0 130px;
+    padding: 40px 105px 0 40px;
   }
 
   h1 {
     font-size: 2em;
+    left: 5px;
+    bottom: -25px;
+    letter-spacing: .01em;
+
+  }
+
+  span.byline {
+    bottom: 30vh;
+    width: 80px;
+    left: auto;
+    transform: none;
+    right: 20px;
+    font-size: .8675em;
   }
 
   h3 {
     font-size: 1.5em;
+    letter-spacing: .01em;
   }
 
   p {
